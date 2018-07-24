@@ -19,4 +19,4 @@ for i in range(divide2):
 if counter == 0:
     print("It's a pelidrome")
 else: 
-    print("It's not a pelidrome")
+    print("It's not a pelidrome" )
