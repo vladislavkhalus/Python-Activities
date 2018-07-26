@@ -5,7 +5,7 @@ cache: pip
 # command to install dependencies
 before_script:
  - easy_install distribute
- - pip install -r requirements.txt 
+ - pip install -r Activity1/requirements.txt 
 # command to run tests 
 script:
 		- python Activity1/Activity1.py 
