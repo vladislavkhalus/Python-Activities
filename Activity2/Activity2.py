@@ -21,7 +21,7 @@ time = []
 multiplicationxy = list()
  
 for i in range(0,392,1):
-    multiplicationxy.append(math.sqrt(math.pow(x_value[i],2) + math.pow(y_value[i],2) )*10)
+    multiplicationxy.append(math.sqrt(math.pow(x_value[i],2) + math.pow(y_value[i],2) )*10) #magnitude * 10
 
 for j in range(0,392,1):
     time.append(j)
