@@ -21,7 +21,7 @@ time = []
 multiplicationxy = list()
  
 for i in range(0,392,1):
-    multiplicationxy.append(math.sqrt(math.pow(x_value[i],2) + math.pow(y_value[i],2) ))
+    multiplicationxy.append(math.sqrt(math.pow(x_value[i],2) + math.pow(y_value[i],2) )*10)
 
 for j in range(0,392,1):
     time.append(j)
@@ -29,13 +29,13 @@ for j in range(0,392,1):
 # Visualizing the data
 #plot(X,Y,specifiers)
 #plt.plot(time2,speed,'b')
-plt.plot( time, multiplicationxy, 'r')
-plt.plot( time, a_value, 'b')
-plt.xlabel('OrientationXY')
-plt.ylabel('Light') 
+plt.plot( time, multiplicationxy, 'r', label='XY Orientation')
+plt.plot( time, a_value, 'b', label='Light')
+plt.xlabel('Number of Samples')
+plt.ylabel('Light and Orientation') 
 # Insert title ('My Title - Speed vs Time') ?? 
 # Legend ??? 
 plt.title('Orientation of the Phone vs. Light')
-#plt.legend('')
+plt.legend(loc='upper left')
 plt.show()
 
