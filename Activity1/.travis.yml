@@ -3,9 +3,8 @@ python:
 	- "3.6"
 cache: pip 
 # command to install dependencies
-before_script:
-	- easy_install distribute 
+install:
 	- pip install -r requirements.txt 
 # command to run tests 
 	script:
-		- python <Activity1.py>
+		- python Activity1.py
