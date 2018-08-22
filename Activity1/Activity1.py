@@ -4,16 +4,24 @@ Spyder Editor
 
 This is a temporary script file.
 """
-array = []
-pelidrome_input = input("Input word to check for pelidrome ")
-divide2 = len(pelidrome_input)
-input_size = len(pelidrome_input)
+# This program is used to get the pelidrome of a word, it can also be used
+# to get the pelidrome of a sentence too.
+# A pelidrome is when the word or a sentence is divided in two,
+# the letters or words reflect each other.
+# Examples are madam, Rotor, Sator Arepo Tenet Opera Rotas, level, kayak,
+# Able was I ere I saw Elba, reer, deed, ect..
+
+
+Array = []
+Pelidrome_input = input("Input word or a sentence to check for pelidrome: ")
+Divide2 = len(Pelidrome_input)
+Input_size = len(Pelidrome_input)
 counter = 0
-for j in range(input_size):
-    array.append(pelidrome_input[j])
-size_array = len(array)
-for i in range(divide2):
-    if array[i] != array[size_array-1-i]:
+for j in range(Input_size):
+    Array.append(Pelidrome_input[j])
+size_array = len(Array)
+for i in range(Divide2):
+    if Array[i].lower() != Array[size_array-1-i].lower():
         counter = counter + 1
 if counter == 0:
     print("It's a pelidrome\n")
